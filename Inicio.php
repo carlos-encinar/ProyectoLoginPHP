@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Talon Skins</title>
+        <title>Talon Page</title>
         <style>
             *{
                 padding:0px;
@@ -13,11 +13,10 @@
                 background-color:black;
                 min-height: 10%;
                 display:flex;
-                border-bottom: solid 10px white;
             }
             
             #divimg{
-                width:53%;
+                width:60%;
                 float:left;
                 color:white;
             }
@@ -27,15 +26,20 @@
             }
             
             #divlogin{
-                width:47%;
+                width:41%;
                 float:left;
                 display: flex;
                 justify-content: center;
+                align-items: center;
             }
             
             #login{
                 color:white;
-                float:right;
+            }
+            
+            #divider{
+                blackground-color:black;
+                width: 100%;
             }
             
             #container{
@@ -54,12 +58,20 @@
                 justify-content: center;
             }
             
+            #textoTalon{
+                padding:2%;
+            }
+            
+            #info{
+                min-width: 100%
+            }
+            
         </style>
     </head>
     <body>
         <div id="cabecera">
             <div id="divimg">
-                <img src="logo.png" alt="Logo" id="img"/>
+                <img src="logo2.png" alt="Logo" id="img"/>
             </div>
             
             <div id="divlogin">
@@ -75,6 +87,10 @@
             </div>
         </div>
         
+        <div >
+            <img src="divider.png" alt="divider" id="divider"/>
+        </div>
+        
         <div id="container">
             
             <div id="contenido">
@@ -83,8 +99,10 @@
                     <div class="carousel-inner">
                         </br>
                         <div>
-                            <h1 id="talon"><span class="badge badge-secondary">
-                            <span class="badge badge-pill badge-light">TALON</span></span></h1>
+                            <h1 id="talon">
+                                    <span class="badge badge-pill badge-light" id="textoTalon"><b><p><img src="assassin.png" alt="asesino"/></p> TALON <p>LA SOMBRA DE LA ESPADA</p></b></span>
+                            </h1>
+                                    
                         </div>
                         </br>
                         <div class="carousel-item active">
@@ -94,12 +112,47 @@
                 </div>
                 
                 </br>
+                </br>
                 
+                <div class="card bg-light mb-3" style="max-width: 18rem;" id="info">
+                    <div class="card-header">Información</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Talon</h5>
+                        <p class="card-text">
+                            Talon es el cuchillo de la oscuridad, un asesino despiadado capaz de atacar sin previo aviso y huir antes de que salte alarma alguna. Logró granjearse una peligrosa reputación en las terribles calles de Noxus, 
+                            donde se vio obligado a luchar, matar y robar para sobrevivir. Talon, adoptado por la ilustre familia Du Couteau, ejerce ahora su letal profesión a las órdenes del imperio, 
+                            asesinando líderes, capitanes y héroes rivales, además de noxianos lo bastante osados como para atraerse la enemistad de sus dirigentes.
+                        </p>
+                        <h5 class="card-title">Talon y Katarina</h5>
+                        <p class="card-text">"Los tres maestros de las cuchillas más temibles de Valoran están vinculados a la casa de Du Couteau: mi padre, Talon y yo. Que nos rete quien se atreva".
+                            ~ Katarina Du Couteau
+                        </p>
+                    </div>
+                </div>
+               
+                </br>
+
                 <div>
-                    <h1 id="talon"><span class="badge badge-secondary">
-                    <span class="badge badge-pill badge-light">TIENDA DE SKINS</span></span></h1>
+                    <h1 id="talon">
+                    <span class="badge badge-pill badge-light" id="textoTalon">TIENDA DE SKINS</span></h1>
                 </div>
                 
+                </br>
+                
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Talon Espada Sempiterna</h5>
+                      <p class="card-text">Cuesta 1350 RP</p>
+                      <form action="Carrito.php " method ="POST" target="_blank">
+                          <p>Cantidad &nbsp; <input type="number" name="cantidad"> &nbsp;
+                            <button type="button" class="btn btn-light">Comprar Skin</button>
+                      </form>
+                      
+                    </div>
+                    <img src="espadaSempiterna.jpg" class="card-img-top" alt="espadaSempiterna"/>
+                </div>
+                
+                </br>
                 </br>
                 
                 <div class="card">
