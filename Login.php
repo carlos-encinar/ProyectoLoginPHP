@@ -13,9 +13,6 @@ and open the template in the editor.
         <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body background="fondo.jpg">
-        <?php
-            
-        ?>
         <div class="container" align="center">
             <div class="d-flex justify-content-center h-100">
                 <div class="card">

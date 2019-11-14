@@ -16,7 +16,7 @@
             }
             
             #divimg{
-                width:60%;
+                width:68%;
                 float:left;
                 color:white;
             }
@@ -26,7 +26,7 @@
             }
             
             #divlogin{
-                width:41%;
+                width:34%;
                 float:left;
                 display: flex;
                 justify-content: center;
@@ -59,7 +59,7 @@
             }
             
             #textoTalon{
-                padding:2%;
+                padding:3%;
             }
             
             #info{
@@ -76,13 +76,13 @@
             
             <div id="divlogin">
                 <div id="login">
-                    <h1>
+                    <h2>
                     <?php 
                         $usuario = $_POST["usuario"];
                         $contraseña = $_POST["contraseña"];
                         echo "Bienvenido ".$usuario;
                     ?>
-                    </h1>
+                    </h2>
                 </div>
             </div>
         </div>
@@ -141,17 +141,16 @@
                 
                 <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Talon Espada Sempiterna</h5>
-                      <p class="card-text">Cuesta 1350 RP</p>
-                      <form action="Carrito.php " method ="POST" target="_blank">
-                          <p>Cantidad &nbsp; <input type="number" name="cantidad"> &nbsp;
-                            <button type="button" class="btn btn-light">Comprar Skin</button>
-                      </form>
-                      
+                        <form action="Carrito.php" method="POST">
+                            <h5 class="card-title">Talon Espada Sempiterna</h5>
+                            <div class="card-text" value="1850" name="espadaSempiterna">Cuesta 1850 RP</div>
+                            <p>Cantidad &nbsp; <input type="number" name="cantidad"> &nbsp;
+                            <input type="submit" class="btn btn-light" value="Comprar Skin">
+                        </form>
                     </div>
                     <img src="espadaSempiterna.jpg" class="card-img-top" alt="espadaSempiterna"/>
                 </div>
-                
+
                 </br>
                 </br>
                 
