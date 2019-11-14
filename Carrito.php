@@ -58,17 +58,22 @@
                 color:white;
             }
             
-            #talon{
-                display: flex;
+            #carrito{
+                display:flex;
                 justify-content: center;
+                align-content: center;
             }
             
-            #textoTalon{
-                padding:3%;
+            #caja{
+                padding:15%;
             }
             
-            #info{
-                min-width: 100%
+            #texto{
+                display:flex;
+                justify-content: center;
+                align-content: center;
+                font-weight: bold;
+                font-size: 50px;
             }
             
         </style>
@@ -92,17 +97,43 @@
             
             <div id="contenido">
                 
-                <div>
-                    
+                <br/>
+                
+                <div id="carrito">
+                    <h1>
+                        <span class="badge badge-pill badge-light" id="caja">CARRITO DE LA COMPRA</span>
+                    </h1>
                 </div>
                 
-                <h1>
+                <br/>
+                <br/>
+                <br/>
+                
+                <h1 id="texto" >
+                
                     <?php
-                        $espadaSempiterna = $_POST["espadaSempiterna"];
+                        $cantidad1 = $_POST ["cantidad1"];
 
-                        echo "Has comprado TalonEspadaSempiterna por".
+                        echo "Has comprado ".$cantidad1;
+                        echo " skins de Talon Espada Sempiterma por 1850 RP cada una.";
                     ?>
+                    
                 </h1>
+                
+                <br/>
+                <br/>
+                
+                <h1 id="texto">
+                
+                    <?php
+                        $cantidad2 = $_POST ["cantidad2"];
+
+                        echo "Has comprado ".$cantidad2;
+                        echo " skins de Talon Luna Sangrienta por 1350 RP cada una.";
+                    ?>
+                    
+                </h1>
+                
             </div>
             
         </div>

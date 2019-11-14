@@ -12,6 +12,7 @@ and open the template in the editor.
         <link href="css/all.css" rel="stylesheet" type="text/css"/>
         <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     </head>
+    
     <body background="fondo.jpg">
         <div class="container" align="center">
             <div class="d-flex justify-content-center h-100">
@@ -52,6 +53,7 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
+        
         <script src="js/jquery-1.12.0.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         
